@@ -1,0 +1,11 @@
+<h2>Fracturas del Vacio</h2>
+
+<section>
+  <div *ngFor="let fissure of fissures">
+  <p> {{fissure.tier}} faccion {{fissure.enemy}}</p>
+    <p > Tipo de mission:  {{fissure.missionType}}</p>
+    <p> Ubicacion: {{fissure.node}} </p>
+  <p>restante : {{fissure.eta}}</p>
+    <hr>
+  </div>
+</section>

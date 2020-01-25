@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AlertsComponent } from './alerts/alerts.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '' , component: AlertsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

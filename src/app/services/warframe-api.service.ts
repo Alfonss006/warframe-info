@@ -16,4 +16,8 @@ export class WarframeApiService {
     return this._http.get(this.baseURL + 'alerts');
   }
 
+  getFissures(): Observable<any> {
+    return this._http.get(this.baseURL + 'fissures');
+  }
+
 }
