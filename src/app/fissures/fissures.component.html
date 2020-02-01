@@ -1,11 +1,19 @@
 <h2>Fracturas del Vacio</h2>
 
-<section>
-  <div *ngFor="let fissure of fissures">
-  <p> {{fissure.tier}} faccion {{fissure.enemy}}</p>
-    <p > Tipo de mission:  {{fissure.missionType}}</p>
-    <p> Ubicacion: {{fissure.node}} </p>
-  <p>restante : {{fissure.eta}}</p>
-    <hr>
-  </div>
-</section>
+<div class="alerts-container">
+<mat-card class="card-alert" *ngFor="let fissure of fissures">
+  <mat-card-header>
+    <mat-card-title>{{fissure.tier}}
+      </mat-card-title>
+      <mat-card-subtitle>{{fissure.missionType +'  '+ fissure.enemy}}</mat-card-subtitle>
+    </mat-card-header>
+    <!--<img matCardImage src="Card wide image source"> -->
+    <mat-card-content>
+      {{fissure.eta}}
+    </mat-card-content>
+    <mat-card-actions align="start">        
+    </mat-card-actions>
+    <mat-card-footer>
+    </mat-card-footer>
+  </mat-card>
+</div>
